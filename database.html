@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameZone - Contact Database</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			width: 70%;
+			padding: 15px;
+			text-align: center;
+			font-size: 18px;
+			align-items: center;
+		}
+
+		tr,td {
+			border: 2px solid #ddd;
+		}
+
+		res-tab {
+			overflow: auto;
+			align-items: center;
+		}
+
+		body {
+			background: linear-gradient(to left bottom,#02d7dd,#6558ff);
+			width: 1200px;
+			height: 97.5%;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+		<div class="res-tab">
+			<div class="logo" style="">
+				<center><img src="images/logo.png" width="15%" height="15%"></center>
+			</div>
+			<h1 align="center">Welcome to GameZone Creation Community</h1>
+
+			<table align="center">
+				<tbody>
+					<tr>
+						<td style="background-color: #090979;color: white">Name</td>
+						<td style="background-color: white;color: black"><p id="name"></p></td>
+					</tr>
+					<tr>
+						<td style="background-color: #090979;color: white">Email</td>
+						<td style="background-color: white;color: black"><p id="email"></p></td>
+					</tr>
+
+					<tr>
+						<td style="background-color: #090979;color: white">Mobile Number</td>
+						<td style="background-color: white;color: black"><p id="phone"></p></td>
+					</tr>
+
+					<tr>
+						<td style="background-color: #090979;color: white">Message</td>
+						<td style="background-color: white;color: black"><p id="message"></p></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 align="center">Thankyou for Contacting Us</h2>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("name").innerHTML=localStorage.getItem("textvalue");
+
+			document.getElementById("email").innerHTML=localStorage.getItem("txtValue");
+
+			document.getElementById("phone").innerHTML=localStorage.getItem("phonenumbervalue");
+
+			document.getElementById("message").innerHTML=localStorage.getItem("messagevalue");
+		</script>
+</body>
+</html>
